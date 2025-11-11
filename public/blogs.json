@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Mastering HTML5 Essentials",
+        "date": "March 09, 2024",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762357494/htmlimg1-B66hCC0v_ltt3tc.avif",
+        "excerpt": "Learn the core structure of modern web pages with HTML5 tags, semantics, and layout foundations.",
+        "content": "HTML5 is the backbone of web development, providing the structure for content on the web. In this blog, we’ll explore HTML5 tags, semantics, and layout techniques that make modern websites efficient and accessible."
+    },
+    {
+        "id": 2,
+        "title": "Styling Like a Pro with CSS3",
+        "date": "April 10, 2024",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762357560/cssimg-q1L2swTr_clhalf.avif",
+        "excerpt": "Discover how to bring your web pages to life using CSS3 animations, grids, and flexbox for responsive design mastery.",
+        "content": "CSS3 introduces advanced styling capabilities such as animations, transitions, and grid/flex layouts. This guide walks you through crafting responsive, visually engaging designs using modern CSS techniques."
+    },
+    {
+        "id": 3,
+        "title": "JavaScript — The Heart of the Web",
+        "date": "May 15, 2025",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762357590/javascriptimg-CbLWI_h3_y4lrif.avif",
+        "excerpt": "A deep dive into JavaScript fundamentals — DOM manipulation, ES6 features, and async programming for dynamic websites.",
+        "content": "JavaScript empowers interactivity on the web. From handling user input to fetching data asynchronously, mastering JS is key to becoming a professional web developer."
+    },
+    {
+        "id": 4,
+        "title": "Building React Apps from Scratch",
+        "date": "June 02, 2025",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762357946/banniere-article-WP-dhiWise-1024x576_hcex5t.png",
+        "excerpt": "Get started with React — learn about components, props, state management, and reusable UI building.",
+        "content": "React simplifies building dynamic UIs through reusable components. This article covers the essential concepts to kickstart your React journey and create scalable web apps."
+    },
+    {
+        "id": 5,
+        "title": "Next.js — The Future of Web Apps",
+        "date": "July 18, 2025",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762357978/images_mnpa8z.jpg",
+        "excerpt": "Explore Next.js features like server-side rendering, API routes, and static site generation for blazing-fast apps.",
+        "content": "Next.js combines the best of React and server rendering for speed and SEO. Learn how to create production-ready web apps using this modern framework."
+    },
+    {
+        "id": 6,
+        "title": "Node.js & Express — Backend Simplified",
+        "date": "August 05, 2025",
+        "image": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762358015/images_1_mot4s8.jpg",
+        "excerpt": "Learn to build scalable backends using Node.js and Express. From REST APIs to middleware, everything made simple.",
+        "content": "Node.js allows JavaScript to run on the server, while Express simplifies routing and middleware management. Together, they power thousands of production-grade backends worldwide."
+    }
+]

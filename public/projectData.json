@@ -1,0 +1,162 @@
+[
+  {
+    "_id": 1,
+    "projectName": "Delta Code Solution",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760193748/WhatsApp_Image_2025-10-11_at_19.35.25_e8c4d340_ezjjrv.jpg",
+    "slogan": "Delta Code Solutions delivers innovative digital solutions that drive business growth, efficiency, and success.",
+    "features": [
+      "Responsive Design – Har device (mobile, tablet, desktop) par perfectly adjust hota hai",
+      "Clear Call-to-Action Buttons – “Get Started” aur “Learn More” user ko direct action dene ke liye.",
+      "Modern Hero Section – High-quality background image aur bold headline se strong first impression",
+      "Easy Navigation Bar – Simple aur user-friendly menu for smooth browsing experience."
+    ],
+    "technologies": [
+      "React",
+      "Lottie-React",
+      "React-router-dom",
+      "React-hook-form",
+      "React-icons",
+      "React-simple-typewriter",
+      "React-tooltip",
+      "Sweetalert2",
+      "Swiper",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React-helmet"
+    ],
+    "liveLink": "https://deltacodesolution.netlify.app/",
+    "clientLink": "https://github.com/jawad226/Deltacodesolutions",
+    "description": "Delta Code Solutions is a leading software development company dedicated to delivering innovative, scalable, and reliable digital solutions. We focus on understanding our clients’ unique business needs and providing technology-driven strategies that drive growth and efficiency. With a skilled team and proven processes, we ensure high-quality, timely delivery across web, mobile, and enterprise platforms. Committed to building long-term partnerships, we help businesses achieve measurable success and stay ahead in a rapidly evolving digital landscape."
+  },
+  {
+    "_id": 2,
+    "projectName": "Capital Shop",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760266515/WhatsApp_Image_2025-10-12_at_15.52.18_e1ff033f_rwwszb.jpg",
+    "slogan": "A modern, responsive, and visually appealing e-commerce website built with clean and well-structured HTML and CSS design.",
+    "features": [
+      "  Responsive layout ensuring compatibility across all screen sizes",
+      "Clean and minimal design with product-focused sections",
+      "Interactive navigation bar and promotional banner area",
+      "Pixel perfect design focused on typography and spacing"
+    ],
+    "technologies": [
+      " HTML5",
+      "CSS3",
+      "Responsive Web Design"
+    ],
+    "liveLink": "https://captial-ecommerce.netlify.app/",
+    "clientLink": "https://github.com/jawad226/Capital",
+    "description": "A modern and responsive e-commerce fashion website built using HTML5 and CSS3. Designed a clean and minimal UI featuring sections for Men, Women, and Baby Collections with smooth navigation, promotional banners, and a user-friendly layout optimized for all devices."
+  },
+  {
+    "_id": 3,
+    "projectName": "EduManage",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760271818/WhatsApp_Image_2025-10-12_at_17.23.00_8211beaf_re9m3d.jpg",
+    "slogan": "EduManage is a student management system designed to simplify academic administration and performance tracking.",
+    "features": [
+      "User Authentication - Secure login system for administrators and teachers with session management",
+      "Student Management - Add, update, delete, and view student details with structured records",
+      "Attendance Module - Record daily attendance and view attendance summaries",
+      "Marks Management - Add, update, and analyze student marks with automated performance insights",
+      "Dashboard Analytics - Real-time display of total students, attendance count, and average marks",
+      "Responsive Design - Fully responsive UI for smooth performance across desktop, tablet, and mobile devices"
+    ],
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "Bootstrap 5",
+      "React.js",
+      "NestJS",
+      "MySQL",
+      "TypeORM",
+      "RESTful APIs"
+    ],
+    "liveLink": "https://github.com/jawad226/EduManage",
+    "clientLink": "https://github.com/jawad226/EduManage",
+    "serverLink": "https://github.com/jawad226/EduManageBackend",
+    "description": "EduManage is a modern and efficient student management system developed to streamline school and college administration. It enables administrators and teachers to manage student records, attendance, and marks with ease. The dashboard provides insightful analytics such as total students, daily attendance, and average marks. Built using React for the frontend and NestJS with MySQL on the backend, the system ensures fast, secure, and scalable operations. Its clean and responsive interface provides a professional and user-friendly experience for educational institutions."
+  },
+  {
+    "_id": 4,
+    "projectName": "WearHub",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760272750/WhatsApp_Image_2025-10-12_at_17.37.04_066968c6_ijxybg.jpg",
+    "slogan": "WearHub is an AI-powered fashion e-commerce platform that helps users discover outfits tailored to their preferences.",
+    "features": [
+      "AI Fashion Advisor – Personalized outfit suggestions based on height, weight, gender, and skin tone",
+      "Smart Product Display – Filter and browse clothing items by category, color, and price",
+      "User Authentication – Secure login and registration system using NextAuth.js",
+      "Responsive & Modern UI – Built with TailwindCSS and lucide-react icons for a sleek shopping experience",
+      "Interactive UX – File uploads with react-dropzone, dropdowns with react-select, and alerts via SweetAlert2",
+      "Deployed on Vercel with MongoDB Atlas integration for fast and scalable performance"
+    ],
+    "technologies": [
+      "React.js 14 (App Router)",
+      "Tailwind CSS",
+      "Lucide React Icons",
+      "React Dropzone",
+      "React Select",
+      "React Hot Toast",
+      "SweetAlert2",
+      "MongoDB Atlas",
+      "Vercel"
+    ],
+    "liveLink": "https://warehubshop.netlify.app/",
+    "clientLink": "https://github.com/jawad226/wearhub",
+    "serverLink": "N/A",
+    "description": "WearHub is an innovative AI-based e-commerce platform designed to provide personalized clothing recommendations. Users can input their height, weight, skin tone, and gender to receive outfit suggestions generated by AI. The project integrates Next.js for the frontend, MongoDB Atlas for data management, and Cloudinary for image storage. Its modern and responsive UI is built using TailwindCSS, with dynamic interactivity through React libraries such as react-select, react-dropzone, and react-hot-toast. Deployed on Vercel, WearHub delivers a smooth and intelligent shopping experience."
+  },
+  {
+    "_id": 5,
+    "projectName": "Health Metrics Pro",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762358819/WhatsApp_Image_2025-11-05_at_21.06.43_3b3dac47_fhphlz.jpg",
+    "slogan": "A professional health and wellness web app for tracking BMI, ideal weight, and fitness progress.",
+    "features": [
+      "BMI Calculator – Calculates Body Mass Index based on height and weight",
+      "Ideal Weight Estimator – Helps users find their healthy weight range",
+      "Health Insights – Displays personalized health metrics and recommendations",
+      "Smart UI – Designed with modern HTML, CSS, and JavaScript for smooth interactivity",
+      "Fully Responsive – Works seamlessly across desktops, tablets, and mobile devices",
+      "Lightweight & Fast – Optimized for performance and user-friendly experience"
+    ],
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6)",
+      "Responsive Design",
+      "Font Awesome Icons",
+      "Netlify"
+    ],
+    "liveLink": "https://health-metrics-pro.netlify.app/",
+    "clientLink": "https://github.com/jawad226/Health-Metrics-Pro",
+    "serverLink": "N/A",
+    "description": "Health Metrics Pro is a professional health and wellness web project built using HTML, CSS, and JavaScript. It allows users to calculate their BMI, estimate their ideal weight, and receive instant health insights. The application features a clean and responsive design, optimized for all devices, ensuring a smooth and engaging user experience. This project demonstrates strong frontend development skills and a focus on practical, real-world functionality for fitness and wellness tracking."
+  },
+  {
+    "_id": 6,
+    "projectName": "Portfolio Website",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762358132/WhatsApp_Image_2025-11-05_at_20.55.04_158e8b41_u6yyte.jpg",
+    "slogan": "A modern and interactive personal portfolio built to showcase projects, skills, and experience.",
+    "features": [
+      "Fully Responsive – Optimized for all screen sizes and devices",
+      "Elegant Design – Professional color palette with smooth animations using Framer Motion",
+      "Modular Components – Clean, reusable React components for scalability",
+      "Dynamic Projects Section – Displays project data fetched from JSON or API",
+      "Contact Integration – Send messages directly via the contact form",
+      "SEO & Performance Optimized – Deployed on Vercel for fast loading and reliability"
+    ],
+    "technologies": [
+      "Next.js 14 (App Router)",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Lucide React Icons",
+      "TypeScript",
+      "Vercel"
+    ],
+    "liveLink": "https://jawadj.vercel.app/",
+    "clientLink": "https://github.com/jawad226/my-portfolio",
+    "serverLink": "N/A",
+    "description": "This personal portfolio website was developed to showcase my professional journey as a full-stack developer. It features a clean and elegant UI, dynamic project listings, and smooth animations powered by Framer Motion. Built using Next.js and Tailwind CSS, the site is fully responsive and optimized for performance. The design emphasizes clarity, usability, and a modern look, making it a perfect platform to present my work, skills, and contact details. Deployed on Vercel, it ensures reliability and fast performance across all devices."
+  }
+]
