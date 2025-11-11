@@ -13,7 +13,7 @@ import {
   SiMysql,
 } from "react-icons/si";
 
-export default function SkillsSection() {
+export default function Skills() {
   const icons = [
     { name: "TypeScript", icon: <SiTypescript /> },
     { name: "React", icon: <SiReact /> },

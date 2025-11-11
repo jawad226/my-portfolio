@@ -15,7 +15,7 @@ export default function home() {
         <Skills />
       </div>
 
-      <div id="experinece">
+      <div id="experience">
         <Experience />
       </div>
       <div id="project">

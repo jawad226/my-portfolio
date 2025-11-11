@@ -57,7 +57,9 @@ const Experience: React.FC = () => {
   return (
     <section
       id="experience"
-      className="relative bg-white text-black py-24 px-6 lg:px-12 max-w-6xl mx-auto overflow-hidden"><motion.div
+      className="relative bg-white text-black py-24 px-6 lg:px-12 max-w-6xl mx-auto overflow-hidden"
+    >
+      <motion.div
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}

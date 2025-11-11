@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useCallback, useState, memo } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
-// ✅ Memoized Navigation Buttons (no unnecessary re-renders)
+// ✅ Memoized Navigation Buttons
 const NavButton = memo(({ name, href, onClick }: { name: string; href: string; onClick: (id: string) => void }) => (
   <button
     onClick={() => onClick(href)}
@@ -15,24 +15,25 @@ const NavButton = memo(({ name, href, onClick }: { name: string; href: string; o
   </button>
 ));
 
-
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
 
-  // ✅ useCallback to avoid recreating the function on every render
+  // ✅ Simplified and reliable scrollToSection function
   const scrollToSection = useCallback(
     (sectionId: string) => {
-      const lowerId = sectionId.toLowerCase();
+      const normalizedId = sectionId.toLowerCase();
 
-      if (lowerId === 'blogs') {
+      // Handle Blogs separately
+      if (normalizedId === 'blogs') {
         router.push('/Blogs');
         setIsMenuOpen(false);
         return;
       }
 
-      if (lowerId === 'home') {
+      // Handle Home separately
+      if (normalizedId === 'home') {
         if (pathname === '/') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
@@ -42,27 +43,59 @@ export default function Header() {
         return;
       }
 
-      const scrollHandler = () => {
-        const el = document.getElementById(lowerId);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
-      };
-
-      if (pathname !== '/') {
-        router.push('/');
-        setTimeout(scrollHandler, 400);
-      } else {
-        scrollHandler();
-      }
-
+      // Close mobile menu first
       setIsMenuOpen(false);
+
+      // For other sections
+      if (pathname !== '/') {
+        // Navigate to home page first
+        router.push('/');
+        
+        // Wait for navigation then scroll
+        const scrollAfterNavigation = () => {
+          const element = document.getElementById(normalizedId);
+          if (element) {
+            const headerOffset = 100; // Adjust based on your header height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        };
+
+        // Wait a bit longer for page to load
+        setTimeout(scrollAfterNavigation, 600);
+      } else {
+        // If already on home page, scroll directly
+        setTimeout(() => {
+          const element = document.getElementById(normalizedId);
+          if (element) {
+            const headerOffset = 10;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 100);
+      }
     },
     [pathname, router]
   );
 
   const handleLogoClick = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      router.push('/');
+    }
     setIsMenuOpen(false);
-  }, []);
+  }, [pathname, router]);
 
   const navigation = [
     { name: 'Home', href: 'home' },
@@ -76,7 +109,7 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-sm ">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 sm:px-8 lg:px-12 py-3">
-        {/* ✅ Optimized logo (Cloudinary compression) */}
+        {/* Logo */}
         <button
           onClick={handleLogoClick}
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
@@ -86,20 +119,20 @@ export default function Header() {
             alt="Profile"
             width={44}
             height={44}
-            priority={true} // loads early but optimized
+            priority={true}
             className="rounded-full object-cover border-2 border-[#009689]"
           />
-          <h1 className="text-lg sm:text-2xl font-extrabold text-gray-800">Jawad Jameel</h1>
+          <h1 className="text-lg sm:text-xl font-extrabold text-gray-800">Jawad Jameel</h1>
         </button>
 
-        {/* ✅ Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10 text-base font-semibold text-gray-800">
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex items-center gap-8 text-base font-semibold text-gray-800">
           {navigation.map((item) => (
             <NavButton key={item.name} {...item} onClick={scrollToSection} />
           ))}
         </nav>
 
-        {/* ✅ Resume Download Button */}
+        {/* Resume Download Button */}
         <div className="hidden md:block">
           <Link
             href="/JAWAD_JAMEEL_RESUME.pdf"
@@ -119,7 +152,7 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* ✅ Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden p-2 rounded-lg text-gray-600 hover:text-[#009689] hover:bg-gray-100 transition-colors"
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -135,9 +168,9 @@ export default function Header() {
         </button>
       </div>
 
-      {/* ✅ Mobile Menu */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 border-t border-gray-100 shadow-md px-6 space-y-3 pb-4">
+        <div className="md:hidden bg-white/95 border-t border-gray-100 shadow-lg px-6 space-y-3 pb-4">
           {navigation.map((item) => (
             <NavButton key={item.name} {...item} onClick={scrollToSection} />
           ))}
@@ -147,6 +180,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-[#009689] text-white font-semibold text-lg px-6 py-3 rounded-lg hover:bg-[#007a6e] transition-all duration-300 mt-3"
+            onClick={() => setIsMenuOpen(false)}
           >
             <span>Download Resume</span>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
