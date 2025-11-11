@@ -84,11 +84,10 @@ export default function Hero() {
                         <Image
                             src="https://res.cloudinary.com/dcfzqdk58/image/upload/v1762697245/Gemini_Generated_Image_gy2wkhgy2wkhgy2w_gaqyka.png"
                             alt="Jawad Jameel - Software Engineer"
-                            width={350}
-                            height={350}
-                            loading="lazy"
+                            width={1200} height={800}
+                            priority
                             quality={70}
-                            priority={false}
+
                         />
                     </div>
                 </div>

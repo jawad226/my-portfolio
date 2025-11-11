@@ -8,13 +8,13 @@ import { usePathname, useRouter } from 'next/navigation';
 const NavButton = memo(({ name, href, onClick }: { name: string; href: string; onClick: (id: string) => void }) => (
   <button
     onClick={() => onClick(href)}
-    className="hover:text-[#009689] transition-colors duration-300 relative group py-2"
+    className="w-full text-left hover:text-[#009689] transition-colors duration-300 relative group py-2"
   >
     {name}
     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#009689] transition-all duration-300 group-hover:w-full"></span>
   </button>
 ));
-NavButton.displayName = 'NavButton';
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
