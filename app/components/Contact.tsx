@@ -1,8 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+
+// Lazy load motion
+const MotionDiv = dynamic(() =>
+  import("framer-motion").then((mod) => mod.motion.div)
+);
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -33,15 +38,16 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="via-white to-gray-100 text-gray-900 max-w-6xl mx-auto px-6 py-20 rounded-2xl "
+      className="text-gray-900 max-w-6xl mx-auto px-6 py-20 rounded-2xl"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
+      <MotionDiv
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start"
+      >
+        {/* Left Contact Info */}
+        <div>
           <h3 className="text-teal-500 font-semibold uppercase tracking-wide mb-3">
             Contact Me
           </h3>
@@ -49,103 +55,76 @@ export default function Contact() {
             Have a <span className="text-teal-600">Project</span> in Mind?
           </h2>
           <p className="text-gray-600 mb-8 max-w-md">
-            I'm available for both freelance and full-time roles. Feel free to
-            reach out I usually respond within 24 hours.
+            I'm available for freelance and full-time roles. Usually reply within 24 hours.
           </p>
 
-          <ul className="space-y-4">
-            <motion.li
-              whileHover={{ scale: 1.05, x: 5 }}
-              className="flex items-center gap-3"
-            >
-              <Mail className="text-teal-500" />
-              <span>jawadc226@gmail.com</span>
-            </motion.li>
-
-            <motion.li
-              whileHover={{ scale: 1.05, x: 5 }}
-              className="flex items-center gap-3"
-            >
-              <Phone className="text-teal-500" />
-              <span>+92 319 0412258</span>
-            </motion.li>
-
-            <motion.li
-              whileHover={{ scale: 1.05, x: 5 }}
-              className="flex items-center gap-3"
-            >
-              <MapPin className="text-teal-500" />
-              <span>Lahore, Pakistan</span>
-            </motion.li>
+          <ul className="space-y-4 text-gray-700">
+            <li className="flex items-center gap-3 hover:text-teal-500 transition-colors">
+              <Mail className="text-teal-500" /> jawadc226@gmail.com
+            </li>
+            <li className="flex items-center gap-3 hover:text-teal-500 transition-colors">
+              <Phone className="text-teal-500" /> +92 319 0412258
+            </li>
+            <li className="flex items-center gap-3 hover:text-teal-500 transition-colors">
+              <MapPin className="text-teal-500" /> Lahore, Pakistan
+            </li>
           </ul>
-        </motion.div>
-        <motion.form
+        </div>
+
+        {/* Right Form */}
+        <form
           onSubmit={handleSubmit}
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          viewport={{ once: true }}
-          className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-teal-200/50 transition-all duration-500"
+          className="bg-gray-50 p-8 rounded-2xl shadow-md hover:shadow-teal-200/50 transition-all duration-300"
         >
           <div className="grid grid-cols-1 gap-6">
-            <motion.input
-              whileFocus={{ scale: 1.02 }}
+            <input
               type="text"
               name="name"
               placeholder="Your Name"
               value={form.name}
               onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 transition"
               required
             />
-            <motion.input
-              whileFocus={{ scale: 1.02 }}
+            <input
               type="email"
               name="email"
               placeholder="Your Email"
               value={form.email}
               onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 transition"
               required
             />
-            <motion.textarea
-              whileFocus={{ scale: 1.02 }}
+            <textarea
               name="message"
               rows={4}
               placeholder="Your Message"
               value={form.message}
               onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-teal-500 transition"
               required
-            ></motion.textarea>
+            ></textarea>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <button
               type="submit"
               className="flex items-center justify-center gap-2 bg-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-600 transition-all duration-300"
             >
               Send Message <Send className="w-4 h-4" />
-            </motion.button>
+            </button>
 
             {status && (
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-sm text-gray-600 mt-2"
-              >
-                {status}
-              </motion.p>
+              <p className="text-sm text-gray-600 mt-2">{status}</p>
             )}
           </div>
-        </motion.form>
-      </div>
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        </form>
+      </MotionDiv>
+
+      {/* Call to Action Section */}
+      <MotionDiv
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="mt-27 bg-[#009689] text-white py-5 px-8 rounded-4xl shadow-lg max-w-6xl mx-auto text-center"
+        className="mt-20 bg-[#009689] text-white py-10 px-8 rounded-3xl shadow-lg max-w-6xl mx-auto text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Ready to Start Your Project?
@@ -168,7 +147,8 @@ export default function Contact() {
             Call Now
           </a>
         </div>
-      </motion.section>
+      </MotionDiv>
     </section>
   );
 }
+

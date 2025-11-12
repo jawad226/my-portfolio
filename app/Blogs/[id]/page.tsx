@@ -86,7 +86,6 @@ export default async function BlogDetailsPage({ params }: PageProps) {
                 fill
                 className="object-cover"
                 priority
-                unoptimized
               />
             </div>
           </div>
@@ -147,7 +146,7 @@ export default async function BlogDetailsPage({ params }: PageProps) {
                       alt={relatedBlog.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      unoptimized
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-6">
@@ -220,3 +219,5 @@ export async function generateMetadata({ params }: PageProps) {
     },
   };
 }
+
+

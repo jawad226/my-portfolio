@@ -51,6 +51,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           src={project.projectImage}
           alt={project.projectName}
           className="w-full rounded-xl mt-4 mb-4 object-cover border border-gray-200"
+          loading="lazy"
         />
 
         <p className="text-gray-700 whitespace-pre-wrap">{project.description}</p>
@@ -59,9 +60,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           <div className="mt-4">
             <h2 className="text-teal-600 font-semibold text-sm mb-2 uppercase">Features</h2>
             <ul className="list-disc list-inside text-gray-700">
-              {project.features.map((f, i) => (
-                <li key={i}>{f.trim()}</li>
-              ))}
+              {project.features.map((f, i) => <li key={i}>{f.trim()}</li>)}
             </ul>
           </div>
         )}
@@ -71,10 +70,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             <h2 className="text-teal-600 font-semibold text-sm mb-2 uppercase">Technologies</h2>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 text-xs font-medium rounded-full bg-teal-100 text-teal-700"
-                >
+                <span key={tech} className="px-3 py-1 text-xs font-medium rounded-full bg-teal-100 text-teal-700">
                   {tech.trim()}
                 </span>
               ))}
@@ -84,30 +80,21 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         <div className="flex flex-wrap gap-3 mt-4">
           {project.liveLink && (
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href={project.liveLink} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-teal-500 text-white hover:bg-teal-600 transition"
             >
               <Globe size={16} /> Live Site
             </a>
           )}
           {project.clientLink && (
-            <a
-              href={project.clientLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href={project.clientLink} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white hover:bg-gray-800 transition"
             >
               <ExternalLink size={16} /> Client
             </a>
           )}
           {project.serverLink && (
-            <a
-              href={project.serverLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href={project.serverLink} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-700 text-white hover:bg-gray-800 transition"
             >
               <ExternalLink size={16} /> Server
