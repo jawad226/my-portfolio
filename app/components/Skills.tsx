@@ -105,7 +105,7 @@ export default function Skills() {
           </p>
 
           <motion.a
-            href="/Jawad_Jameel.pd"
+            href="/Jawad_Jameel_Resume.pdf"
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
