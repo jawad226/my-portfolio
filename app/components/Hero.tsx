@@ -43,15 +43,12 @@ export default function Hero() {
                     <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] border-2 border-teal-500 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                         <Image
                             src="/image1.webp"
-                            alt="Jawad Jameel - Software Engineer"
+                            alt="Hero"
                             width={1200}
-                            height={800}
-                            priority={true} // LCP image ke liye important
+                            height={600}
+                            priority
                             placeholder="blur"
-                            loading="lazy"
-                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
-
                     </div>
                 </div>
             </MotionDiv>
