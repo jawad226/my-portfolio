@@ -1,6 +1,14 @@
-import { About, Contact, Experience, Hero, Projects, Skills } from "./components";
+import dynamic from "next/dynamic";
 
-export default function home() {
+// Lazy load components
+const Hero = dynamic(() => import("./components/Hero"), { ssr: false });
+const About = dynamic(() => import("./components/About"));
+const Skills = dynamic(() => import("./components/Skills"));
+const Experience = dynamic(() => import("./components/Experience"));
+const Projects = dynamic(() => import("./components/Projects"));
+const Contact = dynamic(() => import("./components/Contact"));
+
+export default function Home() {
   return (
     <>
       <div id="home">
@@ -18,6 +26,7 @@ export default function home() {
       <div id="experience">
         <Experience />
       </div>
+
       <div id="project">
         <Projects />
       </div>

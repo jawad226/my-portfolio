@@ -36,7 +36,7 @@ export default function Hero() {
                 className="order-1 md:order-2 md:w-1/2 flex flex-col items-center justify-center mt-2 md:mt-0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true ,amount: 0.5}}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <div className="relative group">
@@ -46,13 +46,12 @@ export default function Hero() {
                             alt="Jawad Jameel - Software Engineer"
                             width={1200}
                             height={800}
-                            priority
-                            quality={70}
-                            loading="eager" // 👈 add this
-                            placeholder="blur" // 👈 optional blur for better UX
-                            blurDataURL="/image1.webp" // 👈 lightweight blur preview
-                            unoptimized={false}
+                            quality={60}
+                            placeholder="blur"
+                            loading="lazy"
+                            sizes="(max-width: 768px) 100vw, 50vw"
                         />
+
                     </div>
                 </div>
             </MotionDiv>
@@ -62,7 +61,7 @@ export default function Hero() {
                 className="order-2 md:order-1 md:w-1/2 space-y-4 mt-4 md:mt-0 px-2"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <p className="text-xs mt-4 text-gray-500">

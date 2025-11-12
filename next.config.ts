@@ -1,16 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    formats: ["image/avif", "image/webp"],
+    quality: 70,
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-        port: '',          // usually empty
-        pathname: '/**',   // allow all paths
-      },
+      { protocol: "https", hostname: "res.cloudinary.com" },
     ],
-    qualities: [70, 75], // allowed image qualities
   },
+  experimental: { optimizeCss: true },
+  reactStrictMode: true,
+  compiler: { removeConsole: true },
 };
-
 module.exports = nextConfig;
