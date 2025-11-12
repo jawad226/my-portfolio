@@ -135,7 +135,7 @@ export default function Header() {
         {/* Resume Download Button */}
         <div className="hidden md:block">
           <Link
-            href="/Jawad_Jameel_Resume.pdf"
+            href="/Jawad_Jameel.pd"
             download
             className="flex items-center gap-2 bg-[#009689] text-white font-semibold text-sm px-5 py-2.5 rounded-lg hover:bg-[#007a6e] transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg group"
           >
@@ -175,7 +175,7 @@ export default function Header() {
             <NavButton key={item.name} {...item} onClick={scrollToSection} />
           ))}
           <Link
-            href="/Jawad_Jameel_Resume.pdf"
+            href="/Jawad_Jameel.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"
