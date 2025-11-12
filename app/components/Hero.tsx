@@ -46,7 +46,7 @@ export default function Hero() {
                             alt="Jawad Jameel - Software Engineer"
                             width={1200}
                             height={800}
-                            quality={60}
+                            quality={70}
                             placeholder="blur"
                             loading="lazy"
                             sizes="(max-width: 768px) 100vw, 50vw"
