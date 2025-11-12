@@ -36,7 +36,7 @@ export default function Hero() {
                 className="order-1 md:order-2 md:w-1/2 flex flex-col items-center justify-center mt-2 md:mt-0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true ,amount: 0.5}}
+                viewport={{ once: true, amount: 0.5 }}
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <div className="relative group">
@@ -46,7 +46,7 @@ export default function Hero() {
                             alt="Jawad Jameel - Software Engineer"
                             width={1200}
                             height={800}
-                            quality={70}
+                            priority={true} // LCP image ke liye important
                             placeholder="blur"
                             loading="lazy"
                             sizes="(max-width: 768px) 100vw, 50vw"
