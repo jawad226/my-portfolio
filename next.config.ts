@@ -13,5 +13,8 @@ const nextConfig = {
     optimizePackageImports: ["framer-motion", "lucide-react"],
   },
 };
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Globe, X } from "lucide-react";
+import Image from "next/image";
 
 type Project = {
   projectName: string;
@@ -47,9 +48,11 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         <h1 className="text-3xl font-bold text-gray-900">{project.projectName}</h1>
         <p className="text-gray-500 italic">{project.slogan}</p>
 
-        <img
+        <Image
           src={project.projectImage}
           alt={project.projectName}
+          width={400}
+          height={250}
           className="w-full rounded-xl mt-4 mb-4 object-cover border border-gray-200"
           loading="lazy"
         />

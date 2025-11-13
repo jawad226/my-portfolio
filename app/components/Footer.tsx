@@ -4,6 +4,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { FaLinkedinIn, FaGithub, FaHeart } from "react-icons/fa";
 import { SiUpwork } from "react-icons/si";
+import Image from "next/image";
 
 // Lazy load motion
 const MotionDiv = dynamic(() =>
@@ -38,9 +39,11 @@ export default function Footer() {
       >
         {/* Top: Profile */}
         <div className="flex flex-col items-center gap-3 mb-6">
-          <img
+          <Image
             src="/image1.png"
             alt="Jawad Jameel"
+            width={56}
+            height={56}
             className="w-14 h-14 rounded-full object-cover border border-teal-400 shadow-md"
           />
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
