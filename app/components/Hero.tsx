@@ -47,7 +47,7 @@ export default function Hero() {
                             width={1200}
                             height={600}
                             priority
-                            placeholder="blur"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
                         />
                     </div>
                 </div>
