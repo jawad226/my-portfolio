@@ -65,7 +65,6 @@ export default function Projects() {
                 height={250}
                 className="aspect-video w-full object-fit rounded-lg shadow-lg border border-gray-200"
                 loading="lazy"
-                placeholder="blur"
               />
             </div>
 

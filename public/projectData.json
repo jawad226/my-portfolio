@@ -27,27 +27,28 @@
     "liveLink": "https://deltacodesolution.netlify.app/",
     "clientLink": "https://github.com/jawad226/Deltacodesolutions",
     "description": "Delta Code Solutions is a leading software development company dedicated to delivering innovative, scalable, and reliable digital solutions. We focus on understanding our clients’ unique business needs and providing technology-driven strategies that drive growth and efficiency. With a skilled team and proven processes, we ensure high-quality, timely delivery across web, mobile, and enterprise platforms. Committed to building long-term partnerships, we help businesses achieve measurable success and stay ahead in a rapidly evolving digital landscape."
-  },
-  {
-    "_id": 2,
-    "projectName": "Capital Shop",
-    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760266515/WhatsApp_Image_2025-10-12_at_15.52.18_e1ff033f_rwwszb.jpg",
-    "slogan": "A modern, responsive, and visually appealing e-commerce website built with clean and well-structured HTML and CSS design.",
-    "features": [
-      "  Responsive layout ensuring compatibility across all screen sizes",
-      "Clean and minimal design with product-focused sections",
-      "Interactive navigation bar and promotional banner area",
-      "Pixel perfect design focused on typography and spacing"
-    ],
-    "technologies": [
-      " HTML5",
-      "CSS3",
-      "Responsive Web Design"
-    ],
-    "liveLink": "https://captial-ecommerce.netlify.app/",
-    "clientLink": "https://github.com/jawad226/Capital",
-    "description": "A modern and responsive e-commerce fashion website built using HTML5 and CSS3. Designed a clean and minimal UI featuring sections for Men, Women, and Baby Collections with smooth navigation, promotional banners, and a user-friendly layout optimized for all devices."
-  },
+  },{
+  "_id": 2,
+  "projectName": "CodeVia Company",
+  "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1764259081/WhatsApp_Image_2025-11-27_at_20.57.32_1f8143f7_moq77q.jpg",
+  "slogan": "A sleek and responsive software agency website built using Next.js, TypeScript, and Tailwind CSS.",
+  "features": [
+    "Modern landing page with service-based sections",
+    "Reusable and strongly typed components",
+    "Tailwind-powered responsive layout",
+    "Fast rendering and optimized performance using Next.js",
+    "Professional UI with clean typography and smooth visuals"
+  ],
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "App Router"
+  ],
+  "liveLink": "https://codevia-company.vercel.app/",
+  "clientLink": "https://github.com/jawad226/codevia",
+  "description": "CodeVia is a modern tech agency website built using Next.js, TypeScript, and Tailwind CSS. It includes sections for services, about company, technologies, portfolio showcase, and a responsive design suitable for any software or IT company."
+},
   {
     "_id": 3,
     "projectName": "EduManage",
