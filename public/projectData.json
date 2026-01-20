@@ -134,7 +134,40 @@
     "description": "Health Metrics Pro is a professional health and wellness web project built using HTML, CSS, and JavaScript. It allows users to calculate their BMI, estimate their ideal weight, and receive instant health insights. The application features a clean and responsive design, optimized for all devices, ensuring a smooth and engaging user experience. This project demonstrates strong frontend development skills and a focus on practical, real-world functionality for fitness and wellness tracking."
   },
   {
-    "_id": 6,
+  "_id": 6,
+  "projectName": "EchoMart",
+  "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1768923999/Screenshot_2026-01-20_201128_xjepbi.png",
+  "slogan": "A modern full-stack e-commerce platform for seamless online shopping experience.",
+  "features": [
+    "Product Catalog – Browse and search a wide range of products with categories and filters",
+    "User Authentication – Secure signup, login, and profile management with JWT tokens",
+    "Shopping Cart & Checkout – Add products to cart, manage orders, and checkout securely",
+    "Order Management – View order history, track status, and manage returns",
+    "Admin Dashboard – Manage products, categories, users, and orders efficiently",
+    "Responsive Design – Fully responsive across desktop, tablet, and mobile devices",
+    "AI-Powered Recommendations – Personalized product suggestions based on user preferences",
+    "Secure Payments – Integration with popular payment gateways for safe transactions",
+    "Performance Optimized – Fast loading and smooth user experience"
+  ],
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "NestJS",
+    "Node.js",
+    "PostgreSQL",
+    "REST API",
+    "JWT Authentication",
+    "Responsive Design",
+    "Tailwind CSS / Styled Components",
+    "Stripe or Payment Gateway Integration"
+  ],
+  "liveLink": "https://echomart.vercel.app",
+  "clientLink": "https://github.com/jawad226/EchoMart",
+  "serverLink": "https://github.com/jawad226/EchoMart-Backend",
+  "description": "EchoMart is a full-stack e-commerce platform built using Next.js and TypeScript for the frontend, NestJS and Node.js for the backend, with PostgreSQL as the database. It allows users to browse, search, and purchase products seamlessly. Users can create accounts, manage their profiles, add products to the cart, and complete secure checkout using integrated payment gateways. The platform includes an admin dashboard for managing products, orders, and users, along with AI-powered product recommendations for personalized shopping. Designed to be fully responsive, EchoMart ensures a smooth and engaging experience across all devices, demonstrating strong full-stack development skills, secure authentication, and scalable architecture for real-world e-commerce applications."
+},
+  {
+    "_id": 7,
     "projectName": "Portfolio Website",
     "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762358132/WhatsApp_Image_2025-11-05_at_20.55.04_158e8b41_u6yyte.jpg",
     "slogan": "A modern and interactive personal portfolio built to showcase projects, skills, and experience.",

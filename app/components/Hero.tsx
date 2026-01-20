@@ -29,11 +29,11 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="w-full flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-10 py-8 md:py-16 bg-white overflow-hidden mb-10"
+            className="w-full flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 lg:px-8 xl:px-10 py-8 md:py-16 bg-white overflow-hidden mb-12"
         >
             {/* Right Image Section */}
             <MotionDiv
-                className="order-1 md:order-2 md:w-1/2 flex flex-col items-center justify-center mt-2 md:mt-0"
+                className="order-1 md:order-2 md:w-1/2 flex flex-col items-center justify-center mt-2 md:mt-10"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.5 }}
