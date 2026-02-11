@@ -54,20 +54,6 @@ The website focuses on:
 
 ---
 
-## 📂 Project Structure
-
-app/  
- ├── components/  
- ├── sections/  
- ├── styles/  
- └── page.tsx  
-
-public/  
- ├── images/  
- └── assets/  
-
----
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone Repository
