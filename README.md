@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Jawad Jameel — Portfolio Website (Next.js)
 
-## Getting Started
+A modern, responsive, and high-performance **personal portfolio website** built using **Next.js 14 (App Router)** to showcase my **skills, experience, and real-world projects**.
 
-First, run the development server:
+🔗 **Live Website:** https://jawadj.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🖼 Preview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Portfolio Preview](https://github.com/user-attachments/assets/e7da0712-6d54-4472-85a1-cd67e503e951)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 👨‍💻 About The Project
 
-To learn more about Next.js, take a look at the following resources:
+This is my **personal developer portfolio** designed to represent my **professional profile, technical skills, and real-world projects**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website focuses on:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ⚡ High Performance
+- 🎯 Clean & Modern UI/UX
+- 🔍 SEO Optimization
+- 📱 Fully Responsive Design
+- 🧩 Scalable Component Architecture
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+### Backend / Tools
+- Next.js API Routes
+- REST APIs
+- Git & GitHub
+- Vercel (Deployment)
+
+---
+
+## ✨ Key Features
+
+- ⚡ Fast & SEO Optimized
+- 📱 Fully Responsive (Mobile, Tablet & Desktop)
+- 🎨 Modern & Clean UI Design
+- 🧩 Component-Based Architecture
+- 📂 Projects Showcase Section
+- 📬 Contact Form Integration
+- 🎞 Smooth Animations using Framer Motion
+
+---
+
+## 📂 Project Structure
+
+app/  
+ ├── components/  
+ ├── sections/  
+ ├── styles/  
+ └── page.tsx  
+
+public/  
+ ├── images/  
+ └── assets/  
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone Repository
+
+git clone https://github.com/your-username/your-repo-name.git  
+
+### 2️⃣ Install Dependencies
+
+npm install  
+
+or  
+
+yarn install  
+
+or  
+
+pnpm install  
+
+### 3️⃣ Run Development Server
+
+npm run dev  
+
+Open http://localhost:3000 in your browser.
+
+---
+
+## 🌍 Deployment
+
+This project is deployed using **Vercel** for **high performance and scalability**.
+
+🔗 **Live URL:** https://jawadj.vercel.app/
+
+---
+
+## 📬 Contact
+
+- 🌐 Portfolio: https://jawadj.vercel.app/
+- 💼 LinkedIn: https://www.linkedin.com/in/jawadjameel/
+- 📧 Email: mejawad.dev@gmail.com
+
+---
+
+## ⭐ Support
+
+If you like this project, please give it a **star ⭐ on GitHub** — it really helps and motivates me to build more awesome projects.
+
+---
+
+## 📝 License
+
+This project is open-source and available under the **MIT License**.
