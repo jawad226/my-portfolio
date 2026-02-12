@@ -1,33 +1,38 @@
 [
   {
-    "_id": 1,
-    "projectName": "Delta Code Solution",
-    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760193748/WhatsApp_Image_2025-10-11_at_19.35.25_e8c4d340_ezjjrv.jpg",
-    "slogan": "Delta Code Solutions delivers innovative digital solutions that drive business growth, efficiency, and success.",
-    "features": [
-      "Responsive Design – Har device (mobile, tablet, desktop) par perfectly adjust hota hai",
-      "Clear Call-to-Action Buttons – “Get Started” aur “Learn More” user ko direct action dene ke liye.",
-      "Modern Hero Section – High-quality background image aur bold headline se strong first impression",
-      "Easy Navigation Bar – Simple aur user-friendly menu for smooth browsing experience."
-    ],
-    "technologies": [
-      "React",
-      "Lottie-React",
-      "React-router-dom",
-      "React-hook-form",
-      "React-icons",
-      "React-simple-typewriter",
-      "React-tooltip",
-      "Sweetalert2",
-      "Swiper",
-      "Tailwind CSS",
-      "DaisyUI",
-      "React-helmet"
-    ],
-    "liveLink": "https://deltacodesolution.netlify.app/",
-    "clientLink": "https://github.com/jawad226/Deltacodesolutions",
-    "description": "Delta Code Solutions is a leading software development company dedicated to delivering innovative, scalable, and reliable digital solutions. We focus on understanding our clients’ unique business needs and providing technology-driven strategies that drive growth and efficiency. With a skilled team and proven processes, we ensure high-quality, timely delivery across web, mobile, and enterprise platforms. Committed to building long-term partnerships, we help businesses achieve measurable success and stay ahead in a rapidly evolving digital landscape."
-  },{
+  "_id": 1,
+  "projectName": "EchoMart",
+  "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1768923999/Screenshot_2026-01-20_201128_xjepbi.png",
+  "slogan": "A modern full-stack e-commerce platform for seamless online shopping experience.",
+  "features": [
+    "Product Catalog – Browse and search a wide range of products with categories and filters",
+    "User Authentication – Secure signup, login, and profile management with JWT tokens",
+    "Shopping Cart & Checkout – Add products to cart, manage orders, and checkout securely",
+    "Order Management – View order history, track status, and manage returns",
+    "Admin Dashboard – Manage products, categories, users, and orders efficiently",
+    "Responsive Design – Fully responsive across desktop, tablet, and mobile devices",
+    "AI-Powered Recommendations – Personalized product suggestions based on user preferences",
+    "Secure Payments – Integration with popular payment gateways for safe transactions",
+    "Performance Optimized – Fast loading and smooth user experience"
+  ],
+  "technologies": [
+    "Next.js",
+    "TypeScript",
+    "NestJS",
+    "Node.js",
+    "PostgreSQL",
+    "REST API",
+    "JWT Authentication",
+    "Responsive Design",
+    "Tailwind CSS / Styled Components",
+    "Stripe or Payment Gateway Integration"
+  ],
+  "liveLink": "https://echomart.vercel.app",
+  "clientLink": "https://github.com/jawad226/EchoMart",
+  "serverLink": "https://github.com/jawad226/EchoMart-Backend",
+  "description": "EchoMart is a full-stack e-commerce platform built using Next.js and TypeScript for the frontend, NestJS and Node.js for the backend, with PostgreSQL as the database. It allows users to browse, search, and purchase products seamlessly. Users can create accounts, manage their profiles, add products to the cart, and complete secure checkout using integrated payment gateways. The platform includes an admin dashboard for managing products, orders, and users, along with AI-powered product recommendations for personalized shopping. Designed to be fully responsive, EchoMart ensures a smooth and engaging experience across all devices, demonstrating strong full-stack development skills, secure authentication, and scalable architecture for real-world e-commerce applications."
+},
+  {
   "_id": 2,
   "projectName": "CodeVia Company",
   "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1764259081/WhatsApp_Image_2025-11-27_at_20.57.32_1f8143f7_moq77q.jpg",
@@ -52,7 +57,7 @@
   {
     "_id": 3,
     "projectName": "EduManage",
-    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760271818/WhatsApp_Image_2025-10-12_at_17.23.00_8211beaf_re9m3d.jpg",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1770904176/WhatsApp_Image_2025-10-12_at_17.23.00_8211beaf_re9m3d.png",
     "slogan": "EduManage is a student management system designed to simplify academic administration and performance tracking.",
     "features": [
       "User Authentication - Secure login system for administrators and teachers with session management",
@@ -73,7 +78,7 @@
       "TypeORM",
       "RESTful APIs"
     ],
-    "liveLink": "https://github.com/jawad226/EduManage",
+    "liveLink": "https://edumanage-phi.vercel.app/",
     "clientLink": "https://github.com/jawad226/EduManage",
     "serverLink": "https://github.com/jawad226/EduManageBackend",
     "description": "EduManage is a modern and efficient student management system developed to streamline school and college administration. It enables administrators and teachers to manage student records, attendance, and marks with ease. The dashboard provides insightful analytics such as total students, daily attendance, and average marks. Built using React for the frontend and NestJS with MySQL on the backend, the system ensures fast, secure, and scalable operations. Its clean and responsive interface provides a professional and user-friendly experience for educational institutions."
@@ -134,38 +139,34 @@
     "description": "Health Metrics Pro is a professional health and wellness web project built using HTML, CSS, and JavaScript. It allows users to calculate their BMI, estimate their ideal weight, and receive instant health insights. The application features a clean and responsive design, optimized for all devices, ensuring a smooth and engaging user experience. This project demonstrates strong frontend development skills and a focus on practical, real-world functionality for fitness and wellness tracking."
   },
   {
-  "_id": 6,
-  "projectName": "EchoMart",
-  "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1768923999/Screenshot_2026-01-20_201128_xjepbi.png",
-  "slogan": "A modern full-stack e-commerce platform for seamless online shopping experience.",
-  "features": [
-    "Product Catalog – Browse and search a wide range of products with categories and filters",
-    "User Authentication – Secure signup, login, and profile management with JWT tokens",
-    "Shopping Cart & Checkout – Add products to cart, manage orders, and checkout securely",
-    "Order Management – View order history, track status, and manage returns",
-    "Admin Dashboard – Manage products, categories, users, and orders efficiently",
-    "Responsive Design – Fully responsive across desktop, tablet, and mobile devices",
-    "AI-Powered Recommendations – Personalized product suggestions based on user preferences",
-    "Secure Payments – Integration with popular payment gateways for safe transactions",
-    "Performance Optimized – Fast loading and smooth user experience"
-  ],
-  "technologies": [
-    "Next.js",
-    "TypeScript",
-    "NestJS",
-    "Node.js",
-    "PostgreSQL",
-    "REST API",
-    "JWT Authentication",
-    "Responsive Design",
-    "Tailwind CSS / Styled Components",
-    "Stripe or Payment Gateway Integration"
-  ],
-  "liveLink": "https://echomart.vercel.app",
-  "clientLink": "https://github.com/jawad226/EchoMart",
-  "serverLink": "https://github.com/jawad226/EchoMart-Backend",
-  "description": "EchoMart is a full-stack e-commerce platform built using Next.js and TypeScript for the frontend, NestJS and Node.js for the backend, with PostgreSQL as the database. It allows users to browse, search, and purchase products seamlessly. Users can create accounts, manage their profiles, add products to the cart, and complete secure checkout using integrated payment gateways. The platform includes an admin dashboard for managing products, orders, and users, along with AI-powered product recommendations for personalized shopping. Designed to be fully responsive, EchoMart ensures a smooth and engaging experience across all devices, demonstrating strong full-stack development skills, secure authentication, and scalable architecture for real-world e-commerce applications."
-},
+    "_id": 6,
+    "projectName": "Delta Code Solution",
+    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1760193748/WhatsApp_Image_2025-10-11_at_19.35.25_e8c4d340_ezjjrv.jpg",
+    "slogan": "Delta Code Solutions delivers innovative digital solutions that drive business growth, efficiency, and success.",
+    "features": [
+      "Responsive Design – Har device (mobile, tablet, desktop) par perfectly adjust hota hai",
+      "Clear Call-to-Action Buttons – “Get Started” aur “Learn More” user ko direct action dene ke liye.",
+      "Modern Hero Section – High-quality background image aur bold headline se strong first impression",
+      "Easy Navigation Bar – Simple aur user-friendly menu for smooth browsing experience."
+    ],
+    "technologies": [
+      "React",
+      "Lottie-React",
+      "React-router-dom",
+      "React-hook-form",
+      "React-icons",
+      "React-simple-typewriter",
+      "React-tooltip",
+      "Sweetalert2",
+      "Swiper",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React-helmet"
+    ],
+    "liveLink": "https://deltacodesolution.netlify.app/",
+    "clientLink": "https://github.com/jawad226/Deltacodesolutions",
+    "description": "Delta Code Solutions is a leading software development company dedicated to delivering innovative, scalable, and reliable digital solutions. We focus on understanding our clients’ unique business needs and providing technology-driven strategies that drive growth and efficiency. With a skilled team and proven processes, we ensure high-quality, timely delivery across web, mobile, and enterprise platforms. Committed to building long-term partnerships, we help businesses achieve measurable success and stay ahead in a rapidly evolving digital landscape."
+  },
   {
     "_id": 7,
     "projectName": "Portfolio Website",
