@@ -166,32 +166,5 @@
     "liveLink": "https://deltacodesolution.netlify.app/",
     "clientLink": "https://github.com/jawad226/Deltacodesolutions",
     "description": "Delta Code Solutions is a leading software development company dedicated to delivering innovative, scalable, and reliable digital solutions. We focus on understanding our clients’ unique business needs and providing technology-driven strategies that drive growth and efficiency. With a skilled team and proven processes, we ensure high-quality, timely delivery across web, mobile, and enterprise platforms. Committed to building long-term partnerships, we help businesses achieve measurable success and stay ahead in a rapidly evolving digital landscape."
-  },
-  {
-    "_id": 7,
-    "projectName": "Portfolio Website",
-    "projectImage": "https://res.cloudinary.com/dcfzqdk58/image/upload/v1762358132/WhatsApp_Image_2025-11-05_at_20.55.04_158e8b41_u6yyte.jpg",
-    "slogan": "A modern and interactive personal portfolio built to showcase projects, skills, and experience.",
-    "features": [
-      "Fully Responsive – Optimized for all screen sizes and devices",
-      "Elegant Design – Professional color palette with smooth animations using Framer Motion",
-      "Modular Components – Clean, reusable React components for scalability",
-      "Dynamic Projects Section – Displays project data fetched from JSON or API",
-      "Contact Integration – Send messages directly via the contact form",
-      "SEO & Performance Optimized – Deployed on Vercel for fast loading and reliability"
-    ],
-    "technologies": [
-      "Next.js 14 (App Router)",
-      "React.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "Lucide React Icons",
-      "TypeScript",
-      "Vercel"
-    ],
-    "liveLink": "https://jawadj.vercel.app/",
-    "clientLink": "https://github.com/jawad226/my-portfolio",
-    "serverLink": "N/A",
-    "description": "This personal portfolio website was developed to showcase my professional journey as a full-stack developer. It features a clean and elegant UI, dynamic project listings, and smooth animations powered by Framer Motion. Built using Next.js and Tailwind CSS, the site is fully responsive and optimized for performance. The design emphasizes clarity, usability, and a modern look, making it a perfect platform to present my work, skills, and contact details. Deployed on Vercel, it ensures reliability and fast performance across all devices."
   }
 ]
