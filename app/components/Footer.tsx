@@ -40,7 +40,7 @@ export default function Footer() {
         {/* Top: Profile */}
         <div className="flex flex-col items-center gap-3 mb-6">
           <Image
-            src="/image1.png"
+            src="/footerimg.jpg"
             alt="Jawad Jameel"
             width={56}
             height={56}

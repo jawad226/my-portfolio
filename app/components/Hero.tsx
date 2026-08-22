@@ -42,7 +42,7 @@ export default function Hero() {
                 <div className="relative group">
                     <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] border-2 border-teal-500 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                         <Image
-                            src="/image1.webp"
+                            src="/profile.png"
                             alt="Hero"
                             width={1200}
                             height={600}

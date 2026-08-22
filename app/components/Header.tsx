@@ -115,7 +115,7 @@ export default function Header() {
           className="flex items-center gap-3 hover:opacity-80 transition-opacity"
         >
           <Image
-            src="https://res.cloudinary.com/dcfzqdk58/image/upload/q_auto,f_auto,w_80,h_80/v1762697245/Gemini_Generated_Image_gy2wkhgy2wkhgy2w_gaqyka.png"
+            src="https://res.cloudinary.com/dcfzqdk58/image/upload/v1787376891/ChatGPT_Image_Aug_6_2026_03_15_37_PM_k6gwtq_1_vbozcu.jpg"
             alt="Profile"
             width={44}
             height={44}
