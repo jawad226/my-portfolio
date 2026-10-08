@@ -80,7 +80,6 @@ export default function Hero() {
                     applications. I specialize in the MERN stack, crafting clean, efficient
                     code that powers high-performance products.
                 </p>
-
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 pt-2">
                     <button
                         onClick={() => scrollToSection("projects")}
