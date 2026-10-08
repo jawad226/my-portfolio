@@ -91,7 +91,7 @@ export default function Skills() {
           </div>
 
           <p className="text-gray-600 max-w-xl mb-8 leading-relaxed">
-            I’m a passionate MERN Stack Developer with over 1 year of experience
+            I’m a passionate MERN Stack Developer with over 3+ years of experience
             in building scalable, high-performance web applications using React,
             Next.js, Node.js, Express, NestJS, MongoDB, and MySQL. I specialize
             in developing clean, efficient, and maintainable code while creating

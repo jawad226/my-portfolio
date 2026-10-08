@@ -76,7 +76,7 @@ export default function Hero() {
                 </h2>
 
                 <p className="text-gray-600 leading-relaxed max-w-md text-sm sm:text-base">
-                    MERN Stack Expert with one+ years of experience building scalable web
+                    MERN Stack Expert with 3+ years of experience building scalable web
                     applications. I specialize in the MERN stack, crafting clean, efficient
                     code that powers high-performance products.
                 </p>

@@ -54,7 +54,7 @@ const About: React.FC = () => {
 
           <p className="text-gray-600 max-w-lg leading-relaxed">
             I build scalable, high-performance web apps with a product-first mindset.
-            With 1+ years of experience crafting clean, efficient, and reliable
+            With 3+ years of experience crafting clean, efficient, and reliable
             software for fast-moving teams and startups.
           </p>
         </div>
