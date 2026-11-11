@@ -1,6 +1,6 @@
 # 🚀 Jawad Jameel — Portfolio Website (Next.js)
 
-A modern, responsive, and high-performance **personal portfolio website** built using **Next.js 14 (App Router)** to showcase my **skills, experience, and real-world projects**.
+A modern, responsive, and high-performance **personal portfolio website** built using **Next.js 16 (App Router)** to showcase my **skills, experience, and real-world projects**.
 
 🔗 **Live Website:** https://jawadj.vercel.app/
 
